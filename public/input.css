@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply h-64 w-48 shadow-lg rounded-lg mb-10 transform transition-all hover:-translate-y-4 hover:shadow-xl flex-none
+}
+.card-img{
+    @apply w-full h-3/5 bg-cover rounded-t-lg
+}
+.card-info{
+    @apply  w-full h-2/5 rounded-b-lg flex flex-col justify-start items-start
+}
+.card-text-t{
+    @apply  font-bold text-xl ml-4 mt-2
+}
+.card-text-p{
+    @apply  text-sm ml-4 mt-1
+}
+
+.rent-cards{
+    @apply w-full h-full flex flex-col my-5 items-center justify-center
+}
+
+.rent-card-title{
+    @apply text-3xl px-8 pt-8 pb-1 font-semibold text-white
+}

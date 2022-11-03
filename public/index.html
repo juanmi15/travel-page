@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TailwindCss-->
+    <link rel="stylesheet" href="../dist/output.css">
+    <!--Tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    
+    <title>Document</title>
+</head>
+<body class="font-Montserrat">
+    <nav></nav>
+    <div id="tab-bar"></div>
+    <section class="w-full">
+      <div id="home">
+        <div class="w-full h-3/4">
+          <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+            <input class=" outline-none p-3 rounded-full shadow-lg transition duration-150 focus-within:shadow-sm focus:ring-2 focus:w-5/6" placeholder="San Francisco" type="search" name="search-bar" id="">
+            <button class="text-lg font-semibold p-4 w-40 rounded-full text-primary shadow-lg bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-transalate-y-1 hover:scale-110">
+              Explorar
+            </button>
+          </div>
+            <figure class="w-full h-full">
+                <img src="./img/sanFrancisco.jpg" alt="Portada">
+            </figure>
+            
+        </div>
+      </div>
+    </section>
+    <section class="p-6" id="recomendados">
+      <h3 class="text-2xl font-semibold text-primary">Recomendados</h3>
+      <div class="w-auto h-auto flex space-x-5 overflow-x-auto overscroll-x-contain mt-5 pb-4"">
+        <div class="card">
+          <div class="card-img bg-norway"></div>
+          <div class="card-info bg-secondary">
+            <p class="card-text-t text-white">Norway</p>
+            <p class="card-text-p text-white">Beautiful landscapes</p>
+          </div>
+        </div> <!--card-->
+        <div class="card">
+          <div class="card-img bg-new_york"></div>
+          <div class="card-info bg-white">
+            <p class="card-text-t text-tertiary">New York</p>
+            <p class="card-text-p text-tertiary">Concrete jungle</p>
+          </div>
+        </div> <!--card-->
+        <div class="card">
+          <div class="card-img bg-norway"></div>
+          <div class="card-info bg-secondary">
+            <p class="card-text-t text-white">Norway</p>
+            <p class="card-text-p text-white">Beautiful landscapes</p>
+          </div>
+        </div><!--card-->
+      </div> <!--card-container-->
+    </section><!--id-recomendadas-->
+    <section class="px-6 h-full w-full" id="rentas_destacadas">
+      <h3 class="text-2xl font-semibold text-primary">Rentas destacadas</h3>
+      <div class="rent-cards">
+        <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
+          <p class="rent-card-title">Chicago</p>
+          <p class="text-md pl-8 text-white">2 habitaciones, 1 baño y cocina</p>
+        </div>
+      </div> <!--rent-cards-->
+      <div class="rent-cards">
+        <div class="w-full h-96 bg-LA bg-cover rounded-xl">
+          <p class="rent-card-title">Los Angeles</p>
+          <p class="text-md pl-8 text-white">4 habitaciones, 3 baños, cocina y piscina privada</p>
+        </div>
+      </div> <!--rent-cards-->
+      <div class="rent-cards">
+        <div class="w-full h-96 bg-miami bg-cover rounded-xl">
+          <p class="rent-card-title">Miami</p>
+          <p class="text-md pl-8 text-white">3 habitaciones, 2 baños, cocina y vista al mar</p>
+        </div>
+      </div> <!--rent-cards-->
+      <div class="rent-cards">
+        <div class="w-full h-96 bg-bali bg-cover rounded-xl">
+          <p class="rent-card-title">Bali</p>
+          <p class="text-md pl-8 text-white">2 habitaciones, 2 baños, cocina y piscina privada</p>
+        </div>
+      </div> <!--rent-cards-->
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
