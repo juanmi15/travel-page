@@ -13,7 +13,7 @@
     
     <title>Document</title>
 </head>
-<body class="font-Montserrat scroll-smooth" >
+<body class="font-Montserrat scroll-smooth max-w-[1280px] mx-auto" >
     <nav></nav>
     <section class="w-full">
       <div id="home">
@@ -84,31 +84,37 @@
     </section><!--id-recomendadas-->
     <section class="px-6 h-full w-full" id="rentas_destacadas">
       <h3 class="text-2xl font-semibold text-primary">Rentas destacadas</h3>
-      <div class="lg:grid lg:grid-cols-3 lg:grid-rows-4 ">
-        <div class="rent-cards lg:col-span-3 lg:row-span-2">
-          <div class="w-full h-96 lg:h-4/6 lg:p-0 bg-chicago bg-cover rounded-xl">
+
+      <div class="lg:grid lg:grid-cols-2  lg:auto-rows-max gap-x-5 gap-y-5">
+
+        <div class="rent-cards lg:col-span-2 lg:row-span-2 lg:h-[750px]">
+          <div class="w-full h-96 bg-chicago bg-cover rounded-xl lg:h-full lg:m-0">
             <p class="rent-card-title">Chicago</p>
             <p class="text-md pl-8 text-white">2 habitaciones, 1 baño y cocina</p>
           </div>
         </div> <!--rent-cards-->
+
         <div class="rent-cards lg:row-span-2">
-          <div class="w-full h-96 lg:h-full  bg-LA bg-cover rounded-xl">
+          <div class="w-full h-96 bg-LA bg-cover rounded-xl lg:min-h-full">
             <p class="rent-card-title">Los Angeles</p>
             <p class="text-md pl-8 text-white">4 habitaciones, 3 baños, cocina y piscina privada</p>
           </div>
         </div> <!--rent-cards-->
-        <div class="rent-cards lg:col-span-2">
-          <div class="w-full h-96 lg:h-full bg-miami bg-cover rounded-xl">
-            <p class="rent-card-title">Miami</p>
-            <p class="text-md pl-8 text-white">3 habitaciones, 2 baños, cocina y vista al mar</p>
+
+        <div class="rent-cards lg:row-span-1 lg:col-span-1">
+          <div class="w-full h-96 bg-miami bg-cover rounded-xl lg:min-h-full">
+              <p class="rent-card-title">Miami</p>
+              <p class="text-md pl-8 text-white">3 habitaciones, 2 baños, cocina y vista al mar</p>            
           </div>
         </div> <!--rent-cards-->
-        <div class="rent-cards lg:col-span-2">
-          <div class="w-full h-96 lg:bg-cover bg-bali bg-cover rounded-xl">
+
+        <div class="rent-cards lg:row-span-1">
+          <div class="w-full h-96 bg-bali bg-cover rounded-xl lg:min-h-full">
             <p class="rent-card-title">Bali</p>
             <p class="text-md pl-8 text-white">2 habitaciones, 2 baños, cocina y piscina privada</p>
           </div>
         </div> <!--rent-cards-->
+
       </div>
       
     </section> <!--id-destacadas-->
