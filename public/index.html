@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TailwindCss-->
+    <link rel="stylesheet" href="../dist/output.css">
+    <!--Tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    
+    <title>Document</title>
+</head>
+<body class="font-Montserrat scroll-smooth max-w-[1280px] mx-auto dark:bg-gray-900" >
+    <nav class="hidden lg:min-w-[980px] lg:w-full lg:max-w-[1280px] lg:h-14 lg:mx-auto  bg-white lg:flex p-4 justify-between items-center fixed z-10  dark:bg-gray-800">
+      <div class="h-auto w-auto">
+        <p class="text-2xl font-bold text-primary  dark:text-gray-300">Just Travel</p>
+      </div>
+      <div class="flex space-x-8">
+        <a class="font-bold text-md text-primary dark:text-white" href="#home">Inicio</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#home">Recomendados</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#home">Rentas</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#home">FAQS</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#home">Sobre nosotros</a>
+      </div>
+      <div class="flex space-x-5 items-center bg-primary dark:bg-gray-700 p-1 px-3 rounded-full mr-4">
+        <a href="#">
+          <img src="./svg/search.svg" width="25"  alt="search-icon">
+        </a>
+        <buttom id="toggle" class="cursor-pointer">
+          <img src="./svg/moon.svg" width="25"  alt="dark-mode-icon" >
+        </buttom>
+        <a href="#">
+          <img class="mr-2" src="./svg/profile.svg" width="25"  alt="profile-icon">
+        </a>
+      </div>
+    </nav>
+    <section class="w-full">
+      <div id="home">
+        <div class="w-full h-3/4">
+          <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:ml-16 lg:pt-40 lg:items-start lg:justify-start">
+            <input class=" outline-none p-3 rounded-full shadow-lg transition duration-150 focus-within:shadow-sm focus:ring-2 focus:w-5/6 lg:hidden"  placeholder="San Francisco" type="search" name="search-bar" id="">
+            <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+              <p class="text-3xl font-bold">Explore more locations like this</p>
+            </div>
+            <button class="text-lg font-semibold p-4 w-40 rounded-full text-primary shadow-lg bg-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 dark:text-gray-800 ">
+              Explorar
+            </button>
+          </div>
+            <figure class="w-full h-full lg:h-96 bg-sanFranciscoDesktop bg-cover">
+                <img class="lg:hidden" src="./img/sanFrancisco.jpg" alt="Portada">
+            </figure>
+            
+        </div>
+      </div>
+    </section>
+    <section class="p-6" id="recomendados">
+      <h3 class="text-2xl font-semibold text-primary dark:text-white">Recomendados</h3>
+      <div class="w-auto h-auto flex space-x-5 overflow-x-auto overscroll-x-contain mt-5 pb-4"">
+        <div class="card">
+          <div class="card-img bg-norway"></div>
+          <div class="card-info bg-secondary dark:bg-gray-600">
+            <p class="card-text-t text-white dark:text-gray-300">Norway</p>
+            <p class="card-text-p text-white dark:text-gray-100">Beautiful landscapes</p>
+          </div>
+        </div> <!--card-->
+        <div class="card">
+          <div class="card-img bg-new_york"></div>
+          <div class="card-info bg-white dark:bg-gray-700">
+            <p class="card-text-t text-tertiary dark:text-gray-300">New York</p>
+            <p class="card-text-p text-tertiary dark:text-gray-100">Concrete jungle</p>
+          </div>
+        </div> <!--card-->
+        <div class="card">
+          <div class="card-img bg-seattle"></div>
+          <div class="card-info bg-secondary dark:bg-gray-600">
+            <p class="card-text-t text-white dark:text-gray-300">Seattle</p>
+            <p class="card-text-p text-white dark:text-gray-100">Great metropolis</p>
+          </div>
+        </div><!--card-->
+        <div class="card">
+          <div class="card-img bg-switzerland"></div>
+          <div class="card-info bg-white dark:bg-gray-700">
+            <p class="card-text-t text-tertiary dark:text-gray-300">Switzerland</p>
+            <p class="card-text-p text-tertiary dark:text-gray-100">Magic city</p>
+          </div>
+        </div><!--card-->
+        <div class="card">
+          <div class="card-img bg-iceland"></div>
+          <div class="card-info bg-secondary dark:bg-gray-600">
+            <p class="card-text-t text-white dark:text-gray-300">Iceland</p>
+            <p class="card-text-p text-white dark:text-gray-100">White paradise</p>
+          </div>
+        </div><!--card-->
+        <div class="card">
+          <div class="card-img bg-sydney"></div>
+          <div class="card-info bg-white dark:bg-gray-700">
+            <p class="card-text-t text-tertiary dark:text-gray-300">Sydney</p>
+            <p class="card-text-p text-tertiary dark:text-gray-100">Great Architecture</p>
+          </div>
+        </div><!--card-->
+        
+      </div> <!--card-container-->
+    </section><!--id-recomendadas-->
+    <section class="px-6 h-full w-full" id="rentas_destacadas">
+      <h3 class="text-2xl font-semibold text-primary dark:text-white">Rentas destacadas</h3>
+
+      <div class="lg:grid lg:grid-cols-2  lg:auto-rows-max gap-x-5 gap-y-5">
+
+        <div class="rent-cards lg:col-span-2 lg:row-span-2 lg:h-[750px]">
+          <div class="w-full h-96 bg-chicago bg-cover rounded-xl lg:h-full lg:m-0">
+            <p class="rent-card-title">Chicago</p>
+            <p class="text-md pl-8 text-white">2 habitaciones, 1 baño y cocina</p>
+          </div>
+        </div> <!--rent-cards-->
+
+        <div class="rent-cards lg:row-span-2">
+          <div class="w-full h-96 bg-LA bg-cover rounded-xl lg:min-h-full">
+            <p class="rent-card-title">Los Angeles</p>
+            <p class="text-md pl-8 text-white">4 habitaciones, 3 baños, cocina y piscina privada</p>
+          </div>
+        </div> <!--rent-cards-->
+
+        <div class="rent-cards lg:row-span-1 lg:col-span-1">
+          <div class="w-full h-96 bg-miami bg-cover rounded-xl lg:min-h-full">
+              <p class="rent-card-title">Miami</p>
+              <p class="text-md pl-8 text-white">3 habitaciones, 2 baños, cocina y vista al mar</p>            
+          </div>
+        </div> <!--rent-cards-->
+
+        <div class="rent-cards lg:row-span-1">
+          <div class="w-full h-96 bg-bali bg-cover rounded-xl lg:min-h-full">
+            <p class="rent-card-title">Bali</p>
+            <p class="text-md pl-8 text-white">2 habitaciones, 2 baños, cocina y piscina privada</p>
+          </div>
+        </div> <!--rent-cards-->
+
+      </div>
+      
+    </section> <!--id-destacadas-->
+    <section id="faqs" class="lg:mt-16">
+      <div id="faqs-container" class="w-full h-full px-6 flex flex-col pt-5 mb-20" >
+        <h3 class="text-3xl text-primary font-bold dark:text-white">FAQs</h3>
+        <div>
+          <p class="text-primary mt-5 mb-2 font-semibold text-l dark:text-gray-400">Payment Methods</p>
+          <p class="dark:text-gray-200">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+        </div> <!--Faqs-card-->
+        <div>
+          <p class="text-primary mt-5 mb-2 font-semibold text-l dark:text-gray-400">Cancellation Policy</p>
+          <p class="dark:text-gray-200">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+        </div> <!--Faqs-card-->
+        <div>
+          <p class="text-primary mt-5 mb-2 font-semibold text-l dark:text-gray-400">Long Stays</p>
+          <p class="dark:text-gray-200">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+        </div> <!--Faqs-card-->
+      </div>
+    </section> <!--Faqs-section-->
+
+    <footer>
+      <div class="flex flex-col px-6 bg-gray-50 py-6 dark:bg-gray-600">
+        <h3 class="text-gray-600 text-2xl font-semibold mb-5 dark:text-gray-200">About Us</h3>
+        <p class="text-gray-500 mb-3 dark:text-gray-300">Investor</p>
+        <p class="text-gray-500 mb-3 dark:text-gray-300">Jobs</p>
+        <p class="text-gray-500 mb-3 dark:text-gray-300">Privacy  policy</p>
+        <p class="text-gray-500 mb-3 dark:text-gray-300">Terms and conditions</p>
+        <p class="text-gray-500 mb-3 dark:text-gray-300">Follow Us</p>
+        <span></span>
+      </div>
+    </footer>
+    <div id="tab-bar" class="flex py-5 justify-center items-center gap-x-6 bg-primary lg:hidden dark:bg-gray-900">
+      <a href="#home">
+        <img src="./svg/home.svg" width="30"  alt="home-icon">
+      </a>
+      <a href="#rentas_destacadas">
+        <img src="./svg/search.svg" width="30"  alt="search-icon">
+      </a>
+      <a href="#recomendados">
+        <img src="./svg/like.svg" width="30"  alt="heart-icon">
+      </a>
+      <button class="bg-red-700 dark:bg-yellow-500 rounded-full p-2" id="toggle-sm">
+        <img src="./svg/moon.svg" width="25"  alt="dark-mode-icon">
+      </button>
+      <a href="#">
+        <img src="./svg/profile.svg" width="30"  alt="profile-icon">
+      </a>
+      
+    </div>
+    <script>
+      const htmlElement = document.querySelector("html");
+      const toggleButton = document.querySelector("#toggle");
+      const toggleButtonSm = document.querySelector("#toggle-sm");
+
+      toggleButton.addEventListener("click", () =>{
+        htmlElement.classList.toggle('dark');
+      })
+      toggleButtonSm.addEventListener("click", () =>{
+        htmlElement.classList.toggle('dark');
+      })
+    </script>
+</body>
+</html>
