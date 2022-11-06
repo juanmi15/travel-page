@@ -8,9 +8,13 @@
 .card-img{
     @apply w-full h-3/5 bg-cover rounded-t-lg
 }
+
+
 .card-info{
-    @apply  w-full h-2/5 rounded-b-lg flex flex-col justify-start items-start
+    @apply  w-full h-2/5 rounded-b-lg flex flex-col justify-start items-start 
 }
+
+
 .card-text-t{
     @apply  font-bold text-xl ml-4 mt-2
 }
